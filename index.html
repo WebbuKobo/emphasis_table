@@ -1,0 +1,89 @@
+﻿<!DOCTYPE HTML>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="author" content="Webbu Kobo" />
+<meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no">
+<meta name="apple-mobile-web-app-capable" content="yes">
+
+<title></title>
+
+<style>
+body{
+	padding-top:30px;
+}
+.table_wrapper{
+	padding-top:1.5em;
+	overflow:hidden;
+}
+table{
+	width:100%;
+	border-collapse:collapse;
+}
+table th,
+table td{
+	border:1px solid;
+}
+table th{
+	background-color:#ccc;
+}
+table th:nth-of-type(2){
+	border-:none;
+	position:relative;
+}
+table th:nth-of-type(2) div{
+	width:100%;
+	line-height:3;
+	background-color:#f00;
+	border:none;
+	border-bottom:none;
+	position:absolute;
+	bottom:0;
+	left:0;
+}
+
+table th:nth-of-type(2) div:before{
+	content:'';
+	display:block;
+	width:calc(100% - 3px);
+	height:400%;
+	border:4px solid;
+	position:absolute;
+	left:-4px;
+}
+table tr:last-child td:first-of-type{
+	border-bottom:4px solid;
+}
+</style>
+</head>
+<body>
+<div class="table_wrapper">
+	<table>
+		<tr>
+			<th>&nbsp</th>
+			<th><div>あああ</div></th>
+			<th>いいい</th>
+			<th>ううう</th>
+		</tr>
+		<tr>
+			<th>えええ</th>
+			<td>おおお</td>
+			<td>かかか</td>
+			<td>ききき</td>
+		</tr>
+		<tr>
+			<th>くくく</th>
+			<td>けけけ</td>
+			<td>こここ</td>
+			<td>さささ</td>
+		</tr>
+		<tr>
+			<th>ししし</th>
+			<td>すすす</td>
+			<td>せせせ</td>
+			<td>そそそ</td>
+		</tr>
+	</table>
+</div>
+</body>
+</html>
